@@ -1,0 +1,69 @@
+:root{  /*set up*/
+     --ff: "Inter", sans-serif;
+     --primarycolor: #F01159;
+     --secondarycolor: #003458;
+     --tertiarycolor: #0E0A23;
+     --textcolor: #565365;
+     --sectextcolor: #FFFFFF;
+     --btncolor: #E5EAEE;
+   }
+   body{
+     font-family: var(--ff);
+     padding: 0;
+     margin: 0;
+   }
+   a{
+     text-decoration: none;
+     color: var(--textcolor);
+   }
+   header{
+     width: 100vw;
+     padding: 40px 250px;
+     box-sizing: border-box; /*to delete the spcee On the edges*/
+   }
+   nav{
+     display: flex;
+     justify-content: space-between;
+     height: 50px;
+     margin-left: auto;
+   }
+   .nav-bar{
+     display: flex;
+     align-items: center;
+     height: 50px;
+   }
+   .nav-item{
+     padding: 0px 30px;
+     line-height: 25.6px;
+     letter-spacing: 0.2px;
+     font-weight: 350;
+   }
+   .logo{
+     color: var(--primarycolor);
+     font-weight: 700;
+     font-size: 20px;
+     line-height: 30px;
+     padding: 10px 0px;
+   }
+   .btn{
+     color: var(--secondarycolor);
+     background-color: var(--btncolor);
+     font-weight: 700;
+     font-size: 15px;
+     line-height: 30px;
+     border: none;
+     padding: 12px 16px 12px 16px;
+   }
+   .home{
+     color: var(--primarycolor);
+   }
+   .circle{
+     width: 56px;
+     height: 56px;
+     background-color: #FDE7EE;
+     border-radius: 50%;
+     padding: 16px;
+   }
+   img{
+     width: 50%;
+   }
