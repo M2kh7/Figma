@@ -14,7 +14,7 @@
 }
 
 body{
-  width: 1440px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
 }
@@ -80,7 +80,7 @@ nav{
   height: 494px;
   position: absolute;
   left: 20%;
-  transform: translateX(-20%); /* Adjust to center .left properly */
+  transform: translateX(-15%); /* Adjust to center .left properly */
   z-index: 1; /* Ensure .left is above .right */
 }
 
@@ -142,7 +142,7 @@ p{
 
 .right{
   position: relative;
-  transform: translateX(50%);
+  transform: translateX(60%);
 }
 
 .img1{
@@ -167,7 +167,7 @@ h2{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 240px;
+  margin-bottom: 120px;
 }
 
 .top{
@@ -190,10 +190,14 @@ h2{
   height: 180px;
 }
 
-.right-bottom{
-  margin-top: 36px;
+.right-bottom p{
+  margin: 36px 0px;
 }
 
+.line3{
+  border: var(--primarycolor) solid 2px;
+  width: 72px;
+}
 
 /* End of second section */
 
@@ -202,6 +206,7 @@ h2{
   justify-content: space-between;
   align-items: flex-start;
   gap: 30px;
+  margin-top: 120px;
 }
 .right2{
   display: flex;
@@ -252,6 +257,23 @@ h3{
   border-radius: 50%;
   padding: 16px;
   margin: 36px 190px 24px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon1{
+  margin-bottom: 5px;
+}
+
+.icon2{
+  margin-top: 10px;
+}
+
+.left2 i{
+  font-size: 20px;
+  color: var(--primarycolor);
+  position: absolute;
 }
 
 .textbox{
@@ -308,7 +330,7 @@ section{
 }
 
 .worldmapdots{
-  height: 600px;
+  height: 500px;
   width: auto;
 }
 
@@ -331,8 +353,7 @@ section{
 }
 
 li {
-  margin-bottom: 16px;
-  padding-left:  16px; ;
+  margin-bottom: 16px; 
 }
 
 li:last-child{
@@ -340,12 +361,13 @@ li:last-child{
 }
 
 li::marker{
-  margin-left: 16px;
+  font-size: 1.4em;
 }
 
 ul{
   margin-top: 24px;
   margin-bottom: 36px;
+  padding: 0px 0px;
 }
 
 .last-of-section{
@@ -365,4 +387,162 @@ ul{
   display: flex;
   justify-content: center;
   gap: 30px;
+}
+
+.circle2{
+  height: 128px;
+  width: 128px;
+  border-radius: 100%;
+  border: 0.1px solid #CCD6DE;
+  background-color: var(--btncolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.circle-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 72px;
+}
+
+h4{
+  color: var(--tertiarycolor);
+}
+
+i{
+  font-size: 48px;
+  color: var(--secondarycolor);
+}
+
+
+
+footer{
+  background-color: #001523;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  
+}
+
+.horizontal1-foot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 80px;
+  gap: 65px;
+  margin-bottom: 80px;
+}
+
+.footer-h2{
+  color: var(--sectextcolor);
+}
+
+.horizontal2-foot{
+  display: flex;
+  flex-direction: column;
+}
+
+.icons i {
+  font-size: 24px;
+  color: var(--sectextcolor);
+}
+
+.button_secondary i{
+  color: var(--sectextcolor);
+  font-size: 11.5px;
+}
+
+.button_secondary p{
+  margin: 0px;
+  color: var(--sectextcolor);
+}
+
+.button_secondary{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000A12;
+  padding: 16px 24px 16px 24px;
+  gap: 8px;
+  margin-bottom: 80px;
+  border: 1px solid #000A12;
+}
+
+.box1{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 246px;
+}
+
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.horizontal1-foot li {
+  list-style-type: none;
+}
+
+.line{
+  border: 1px #000A12 solid;
+  margin-bottom: 80px;
+}
+
+.line2{
+  border: 1px solid #CCD6DE;
+  width: 970px;
+}
+
+.linebox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content{
+  display: flex;
+  justify-items: center;
+}
+
+.Company{
+  margin-right: 110px;
+}
+
+.Resources{
+  margin-right: 105px;
+}
+
+.footer-content ul{
+  list-style-type: none;
+  margin: 0px;
+}
+
+.footest-footer li{
+  margin-bottom: 24px;
+}
+
+.footest-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.footer-content li:last-child{
+  margin-bottom: 0px;
+}
+
+.footer-content li:first-child{
+  margin-bottom: 42px;
+  color: var(--sectextcolor);
+  font-weight: 700;
 }
